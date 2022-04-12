@@ -40,11 +40,11 @@ ip = 5
 !Initialize primitive variables to condtions defined in namelist
 D_1    = d_region(1)                
 P_1    = p_region(1)              
-U_1    = d_region(1)       
-V_1    = p_region(1)                          
-W_1    = p_region(1)                            
+U_1    = 0      
+V_1    = 0                         
+W_1    = 0                          
 do i=1,nn 
-q(i,id) = D_b
+q(i,id) = D_1
 q(i,iu) = U_1
 q(i,iv) = V_1
 q(i,iw) = W_1
